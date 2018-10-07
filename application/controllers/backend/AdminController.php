@@ -22,6 +22,10 @@ class AdminController extends CI_Controller {
 	{
             $data['title']='Login';
             $data['heading']='Framework';
+            $data['hide_footer'] = true;
+            $data['hide_social_login'] = true;
+            $data['structure'] = 'backend';
+            $data['view'] = 'common/login';
             if($this ->input->post()){
                 if($this->form_validation->run('signup')){
                     
@@ -29,9 +33,8 @@ class AdminController extends CI_Controller {
                     
                 }
             }else{
-                $this->load->view('backend/includes/header',$data);
-                $this->load->view('backend/login',$data);
-                $this->load->view('backend/includes/footer',$data);
+                
+                includesHeaderFooter($data);
             }
         }
 }

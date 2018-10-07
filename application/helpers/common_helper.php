@@ -6,16 +6,41 @@ if(!defined('BASEPATH')) exit('No direct script access allowed');
  * and open the template in the editor.
  */
 
-function pr($arr)
-{
+function pr($arr){
     if(!empty($arr)){
         echo "<pre>";
         print_r($arr);
     }
 }
-function includes($data){
+function pr_d($arr){
+    if(!empty($arr)){
+        echo "<pre>";
+        print_r($arr);
+        die;
+    }
+}
+function includesHeader($data){
     $ci=& get_instance();
-    $ci->load->view('backend/include/header',$data);
-    $ci->load->view('backend/include/sidebar',$data);
+    $ci->load->view($data['structure'].'/includes/header',$data);
+    $ci->load->view($data['structure'].'/'.$data['view'],$data);
+}
+function includesHeaderSidebar($data){
+    $ci=& get_instance();
+    $ci->load->view($data['structure'].'/includes/header',$data);
+    $ci->load->view($data['structure'].'/includes/sidebar',$data);
+    $ci->load->view($data['structure'].'/'.$data['view'],$data);
+}
+function includesHeaderFooter($data){
+    $ci=& get_instance();
+    $ci->load->view($data['structure'].'/includes/header',$data);
+    $ci->load->view($data['structure'].'/'.$data['view'],$data);
+    $ci->load->view($data['structure'].'/includes/footer',$data);
+}
+function includesAll($data){
+    $ci=& get_instance();
+    $ci->load->view($data['structure'].'/includes/header',$data);
+    $ci->load->view($data['structure'].'/includes/sidebar',$data);
+    $ci->load->view($data['structure'].'/'.$data['view'],$data);
+    $ci->load->view($data['structure'].'/includes/footer',$data);
 }
 

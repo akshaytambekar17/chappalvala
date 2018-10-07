@@ -1,11 +1,12 @@
-
-            <footer class="main-footer">
-                <div class="pull-right hidden-xs">
-                    <b>Version</b> 2.4.0
-                </div>
-                <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-                reserved.
-            </footer>
+            <?php if(empty($hide_footer)){?>
+                <footer class="main-footer">
+                    <div class="pull-right hidden-xs">
+                        <b>Version</b> 2.4.0
+                    </div>
+                    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+                    reserved.
+                </footer>
+            <?php } ?>    
         </div>
         <!-- ./wrapper -->
 
@@ -27,14 +28,14 @@
         <!-- ChartJS -->
         <script src="<?php echo base_url();?>assets/backend/bower_components/chart.js/Chart.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="<?php echo base_url();?>assets/backend/dist/js/pages/dashboard2.js"></script>
+<!--        <script src="<?php echo base_url();?>assets/backend/dist/js/pages/dashboard2.js"></script>-->
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo base_url();?>assets/backend/dist/js/demo.js"></script>
         <!-- iCheck -->
         <script src="<?php echo base_url();?>assets/backend/plugins/iCheck/icheck.min.js"></script>
         <script>
           $(function () {
-            $('input').iCheck({
+            $("input").iCheck({
               checkboxClass: 'icheckbox_square-blue',
               radioClass: 'iradio_square-blue',
               increaseArea: '20%' /* optional */

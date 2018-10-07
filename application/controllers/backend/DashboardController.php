@@ -21,9 +21,8 @@ class DashboardController extends CI_Controller {
 	public function index()
 	{
             $data['title']='Framework'; 
-            $this->load->view('backend/includes/header',$data);
-            $this->load->view('backend/includes/sidebar',$data);
-            $this->load->view('backend/includes/footer',$data);
-            //$this->load->view('welcome_message');
-	}
+            $data['structure'] = 'backend';
+            $data['view'] = 'common/dashboard';
+            includesAll($data);
+        }
 }
