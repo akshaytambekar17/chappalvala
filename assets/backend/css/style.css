@@ -11,6 +11,15 @@
 .feedback-rating-first{
     margin-right: 15px !important;
 }
+.center{
+    text-align: center;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-40{
+    margin-top: 40px;
+}
 
 /********Star rating css***********/
 div.stars {

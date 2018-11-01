@@ -41,9 +41,45 @@ $config = array(
                         'label' => 'MessageBody',
                         'rules' => 'required'
                 )
+        ),
+        'category' => array(
+                array(
+                        'field' => 'name',
+                        'label' => 'Category name',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'description',
+                        'label' => 'Description',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'meta_title',
+                        'label' => 'Meta Title',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'meta_description',
+                        'label' => 'Meta Description',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'meta_keywords',
+                        'label' => 'Meta Keywords',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'status',
+                        'label' => 'Status',
+                        'rules' => 'required'
+                )
         )
 );
 $config['error_prefix'] = '<div class="error">';
 $config['error_suffix'] = '</div>';
+
+
+
+
 
 

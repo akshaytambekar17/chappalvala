@@ -33,6 +33,12 @@
 
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        
+        <link href="<?php echo base_url();?>assets/backend/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel='stylesheet' type='text/css' />
+        
+        <link href="<?php echo base_url();?>assets/backend/js/datatables/css/datatables.css" rel='stylesheet' type='text/css' />
+        
+        <link href="<?php echo base_url();?>assets/backend/bower_components/select2/dist/css/select2.min.css" rel='stylesheet' type='text/css' />
     </head>
     
 

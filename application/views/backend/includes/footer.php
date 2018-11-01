@@ -30,17 +30,33 @@
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <!--        <script src="<?php echo base_url();?>assets/backend/dist/js/pages/dashboard2.js"></script>-->
         <!-- AdminLTE for demo purposes -->
+        
         <script src="<?php echo base_url();?>assets/backend/dist/js/demo.js"></script>
         <!-- iCheck -->
         <script src="<?php echo base_url();?>assets/backend/plugins/iCheck/icheck.min.js"></script>
+        
+        <script src="<?= base_url() ?>assets/backend/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    
+        <script src="<?= base_url() ?>assets/backend/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        
+        <script src="<?= base_url() ?>assets/backend/bower_components/select2/dist/js/select2.full.min.js"></script>
+        
+        
         <script>
-          $(function () {
-            $("input").iCheck({
-              checkboxClass: 'icheckbox_square-blue',
-              radioClass: 'iradio_square-blue',
-              increaseArea: '20%' /* optional */
+            $(function () {
+                $("input").iCheck({
+                    checkboxClass: 'icheckbox_square-blue',
+                    radioClass: 'iradio_square-blue',
+                    increaseArea: '20%' /* optional */
+                });
+                $(".alert").delay(5000).slideUp(200, function() {
+                    $(this).alert('close');
+                });
+                $('.datatable-list').dataTable({
+                    "aaSorting": [[0, "desc"]],
+                });
+                 $('.select2').select2();
             });
-          });
         </script>
     </body>
 </html>

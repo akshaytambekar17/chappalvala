@@ -6,18 +6,14 @@ if(!defined('BASEPATH')) exit('No direct script access allowed');
  * and open the template in the editor.
  */
 
-function pr($arr){
-    if(!empty($arr)){
-        echo "<pre>";
-        print_r($arr);
-    }
+function prints($data){
+    echo "<pre>";
+    print_r($data);
 }
-function pr_d($arr){
-    if(!empty($arr)){
-        echo "<pre>";
-        print_r($arr);
-        die;
-    }
+function printDie($data){
+    echo "<pre>";
+    print_r($data);
+    die;
 }
 function includesHeader($data){
     $ci=& get_instance();
