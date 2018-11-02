@@ -18,11 +18,16 @@ class DashboardController extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+        function __construct() {
+            parent::__construct();
+            if (!$this->session->userdata('user_data')) {
+                redirect('admin', 'refresh');
+            }
+        }
 	public function index()
 	{
-            $data['title']='Framework'; 
-            $data['structure'] = 'backend';
-            $data['view'] = 'common/dashboard';
-            includesAll($data);
+            $data['title'] = 'Dashboard'; 
+            $data['heading'] = 'Chappalvala';
+            $this->backendLayout($data);
         }
 }
