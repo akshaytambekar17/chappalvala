@@ -80,7 +80,7 @@
                                     <img src="<?= base_url()?>assets/category-images/<?= $category_details['image']?>" width="70px" height="50px">
                                     <input type="hidden" value="<?= $category_details['image']?>" name="image_hidden">
                                 <?php } ?>
-                                <span class="help-block"><?php echo form_error('images'); ?></span>
+                                <span class="help-block"><?php echo form_error('image'); ?></span>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Status</label>

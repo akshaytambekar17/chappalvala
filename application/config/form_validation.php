@@ -73,6 +73,53 @@ $config = array(
                         'label' => 'Status',
                         'rules' => 'required'
                 )
+        ),
+        'products-form' => array(
+                array(
+                        'field' => 'name',
+                        'label' => 'Product name',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'description',
+                        'label' => 'Description',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'quantity',
+                        'label' => 'Quantity',
+                        'rules' => 'required|numeric'
+                ),
+                array(
+                        'field' => 'price',
+                        'label' => 'Price',
+                        'rules' => 'required|numeric'
+                ),
+                array(
+                        'field' => 'meta_title',
+                        'label' => 'Meta Title',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'meta_description',
+                        'label' => 'Meta Description',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'meta_keywords',
+                        'label' => 'Meta Keywords',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'category[]',
+                        'label' => 'Category',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'status',
+                        'label' => 'Status',
+                        'rules' => 'required'
+                )
         )
 );
 $config['error_prefix'] = '<div class="error">';
