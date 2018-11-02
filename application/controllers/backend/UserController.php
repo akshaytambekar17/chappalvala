@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+error_reporting(0);
 class UserController extends MY_Controller {
 
 	/**
@@ -24,6 +24,12 @@ class UserController extends MY_Controller {
 	}
         public function login()
 	{
+           if($this->session->userdata('name'))
+           {
+               
+                redirect('category','refresh');
+           }
+
             $data['title']='Login';
             $data['heading']='Chappalvala';
             $data['hide_footer'] = true;
@@ -33,18 +39,31 @@ class UserController extends MY_Controller {
 //            $post = $this->input->post();
 //            printDie($post);
             if($this->input->post()){
-                $post = $this->input->post();
-                printDie($post);
-                $this->form_validation->set_rules();
-                if($this->form_validation->run('login')){
-                 
-                      $this->load->view('welcome_message');     
+                //$post = $this->input->post();
+                //printDie($post);
+                if($this->form_validation->set_rules()){
+                      $post = $this->input->post();
+                      $this->session->set_userdata('name', $post['email']);
+                      redirect('category','refresh');
+                   
+                }
+                /*if($this->form_validation->run('login')){
                     
-                }else{
+                }*/else{
                     $this->backendLayout($data);
                 }
             }else{
                 $this->backendLayout($data);
             }
+        }
+
+        public function home()
+        {
+           $this->load->view('frontend/home'); 
+        }
+        public function logout()
+        {
+            $this->session->unset_userdata('name');
+            return redirect('admin');
         }
 }
