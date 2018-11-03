@@ -68,17 +68,25 @@
                                 <span class="has-error"><?php echo form_error('meta_keywords'); ?></span>
                             </div>
                             <div class="form-group col-md-12">
+                                <label>Stock</label>
+                                <input type="text" name="stock" class="form-control" id="stock" placeholder="Stock" value="<?= !empty($product_details['stock'])?$product_details['stock']:set_value('stock')?>">
+                                <span class="has-error"><?php echo form_error('stock'); ?></span>
+                            </div>
+                            <div class="form-group col-md-12">
                                 <label>Select Category</label>
                                 <select class="form-control select2" name="category[]" multiple="multiple">
                                     <option disabled="disabled">Select Category</option>
                                     <?php foreach($category_list  as $value){ 
-                                            if($product_has_category_details['parent_id'] == $value['id']){
-                                                $selected='selected="selected"';
-                                            }else{
-                                                $selected='';
+                                            $selected='';
+                                            if(!empty($product_has_category_details)){
+                                                foreach($product_has_category_details as $value_has_category){
+                                                    if($value_has_category['category_id'] == $value['id']){
+                                                        $selected='selected="selected"';
+                                                    }
+                                                }
                                             }
                                     ?>
-                                            <option value="<?= $value['id']?>" <?= !empty($product_has_category_details['parent_id'])?$selected:set_select('parent_id',$value['id']);?>><?= $value['name']?></option>
+                                            <option value="<?= $value['id']?>" <?= !empty($product_has_category_details)>0?$selected:set_select('category[]',$value['id']);?>><?= $value['name']?></option>
                                     <?php } ?>
                                 </select>
                                 <span class="has-error"><?php echo form_error('category[]'); ?></span>
@@ -92,6 +100,64 @@
                                 <?php } ?>
                                 <span class="help-block"><?php echo form_error('image'); ?></span>
                             </div>
+                            <div class="form-group col-md-12">
+                                <label>Select Brand</label>
+                                <select class="form-control select2" name="brand[]" multiple="multiple">
+                                    <option disabled="disabled">Select Brand</option>
+                                    <?php foreach($brand_list  as $value){ 
+                                            $selected='';
+                                            if(!empty($product_has_brand_details)){
+                                                foreach($product_has_brand_details as $value_has_brand){
+                                                    if($value_has_brand['brand_id'] == $value['id']){
+                                                        $selected='selected="selected"';
+                                                    }
+                                                }
+                                            }
+                                    ?>
+                                            <option value="<?= $value['id']?>" <?= !empty($product_has_brand_details)?$selected:set_select('brand[]',$value['id']);?>><?= $value['name']?></option>
+                                    <?php } ?>
+                                </select>
+                                <span class="has-error"><?php echo form_error('brand[]'); ?></span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Select Color</label>
+                                <select class="form-control select2" name="color[]" multiple="multiple">
+                                    <option disabled="disabled">Select Color</option>
+                                    <?php foreach($color_list  as $value){ 
+                                            $selected='';
+                                            if(!empty($product_has_color_details)){
+                                                foreach($product_has_color_details as $value_has_color){
+                                                    if($value_has_color['color_id'] == $value['id']){
+                                                        $selected='selected="selected"';
+                                                    }
+                                                }
+                                            }
+                                    ?>
+                                            <option value="<?= $value['id']?>" <?= !empty($product_has_color_details)?$selected:set_select('color[]',$value['id']);?>><?= $value['name']?></option>
+                                    <?php } ?>
+                                </select>
+                                <span class="has-error"><?php echo form_error('color[]'); ?></span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Select Size</label>
+                                <select class="form-control select2" name="size[]" multiple="multiple">
+                                    <option disabled="disabled">Select Size</option>
+                                    <?php foreach($size_list  as $value){ 
+                                            $selected='';
+                                            if(!empty($product_has_size_details)){
+                                                foreach($product_has_size_details as $value_has_size){
+                                                    if($value_has_size['size_id'] == $value['id']){
+                                                        $selected='selected="selected"';
+                                                    }
+                                                }
+                                            }
+                                    ?>
+                                            <option value="<?= $value['id']?>" <?= !empty($product_has_size_details)?$selected:set_select('size[]',$value['id']);?>><?= $value['size']?></option>
+                                    <?php } ?>
+                                </select>
+                                <span class="has-error"><?php echo form_error('size[]'); ?></span>
+                            </div>
+                            
                             <div class="form-group col-md-12">
                                 <label>Status</label>
                                 <select class="form-control select2" name="status">

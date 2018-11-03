@@ -11,33 +11,33 @@
  *
  * @author comc
  */
-class ProductHasCategoryModel extends CI_Model {
+class ProductHasBrandModel extends CI_Model {
 
     //put your code here
     public function __construct() {
         parent::__construct();
     }
     
-    public function getProductHasCategory() {
+    public function getProductHasBrand() {
         $this->db->order_by('id','DESC');
-        return $this->db->get('product_has_category')->result_array();
+        return $this->db->get('product_has_brand')->result_array();
     }
-    public function getProductHasCategoryById($id) {
+    public function getProductHasBrandById($id) {
         $this->db->where('id',$id);
-        return $this->db->get('product_has_category')->row_array();
+        return $this->db->get('product_has_brand')->row_array();
     }
-    public function getProductHasCategoryByCategoryId($id) {
-        $this->db->where('category_id',$id);
-        return $this->db->get('product_has_category')->result_array();
+    public function getProductHasBrandByBrandId($id) {
+        $this->db->where('brand_id',$id);
+        return $this->db->get('product_has_brand')->result_array();
     }
-    public function getProductHasCategoryByProductId($id) {
+    public function getProductHasBrandByProductId($id) {
         $this->db->where('product_id',$id);
-        return $this->db->get('product_has_category')->result_array();
+        return $this->db->get('product_has_brand')->result_array();
     }
     
     public function add($data){
         $this->db->trans_start();
-        $this->db->insert('product_has_category', $data);
+        $this->db->insert('product_has_brand', $data);
         $this->db->trans_complete();
         if($this->db->affected_rows()){
             return true;
@@ -47,7 +47,7 @@ class ProductHasCategoryModel extends CI_Model {
     }
     public function delete($id) {
         $this->db->where('id',$id);
-        $this->db->delete('product_has_category'); 
+        $this->db->delete('product_has_brand'); 
         if($this->db->affected_rows()){
             return true;
         }else{
@@ -56,7 +56,7 @@ class ProductHasCategoryModel extends CI_Model {
     }
     public function deleteByProductId($product_id) {
         $this->db->where('product_id',$product_id);
-        $this->db->delete('product_has_category'); 
+        $this->db->delete('product_has_brand'); 
         if($this->db->affected_rows()){
             return true;
         }else{

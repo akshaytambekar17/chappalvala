@@ -11,30 +11,33 @@
  *
  * @author comc
  */
-class ProductModel extends CI_Model {
+class SizeModel extends CI_Model {
 
     //put your code here
     public function __construct() {
         parent::__construct();
     }
     
-    public function getProducts() {
+    public function getSizes() {
         $this->db->order_by('id','DESC');
-        return $this->db->get('product')->result_array();
+        return $this->db->get('size')->result_array();
     }
-    public function getProductById($id) {
+    public function getSizeById($id) {
         $this->db->where('id',$id);
-        return $this->db->get('product')->row_array();
+        return $this->db->get('size')->row_array();
     }
     
     public function add($data){
-        $this->db->insert('product', $data);
-        $last_id = $this->db->insert_id();
-        return $last_id;
+        $this->db->insert('size', $data);
+        if($this->db->affected_rows()){
+            return true;
+        }else{
+            return false;
+        }
     }
     public function update($updateData){
         $this->db->where('id',$updateData['id']);
-        $this->db->update('product',$updateData);
+        $this->db->update('size',$updateData);
         if($this->db->affected_rows()){
             return true;
         }else{
@@ -44,7 +47,7 @@ class ProductModel extends CI_Model {
 
     public function delete($id) {
         $this->db->where('id',$id);
-        $this->db->delete('product'); 
+        $this->db->delete('size'); 
         if($this->db->affected_rows()){
             return true;
         }else{

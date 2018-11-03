@@ -111,8 +111,28 @@ $config = array(
                         'rules' => 'required'
                 ),
                 array(
+                        'field' => 'stock',
+                        'label' => 'Stock',
+                        'rules' => 'required'
+                ),
+                array(
                         'field' => 'category[]',
                         'label' => 'Category',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'brand[]',
+                        'label' => 'Brand',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'color[]',
+                        'label' => 'Color',
+                        'rules' => 'required'
+                ),
+                array(
+                        'field' => 'size[]',
+                        'label' => 'Size',
                         'rules' => 'required'
                 ),
                 array(
