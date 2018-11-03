@@ -1,5 +1,25 @@
+<?php
+
+?>
+
 <body class="hold-transition login-page">
     <div class="login-box">
+        <?php if($message = $this ->session->flashdata('Message')){?>
+            <div class="col-md-12 ">
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <?=$message ?>
+                </div>
+            </div>
+        <?php }?> 
+        <?php if($message = $this ->session->flashdata('Error')){?>
+            <div class="col-md-12 ">
+                <div class="alert alert-dismissible alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <?=$message ?>
+                </div>
+            </div>
+        <?php }?>
         <div class="login-logo">
             <a href="<?= base_url()?>admin"><b><?= !empty($heading)?$heading:'Login'?></b></a>
         </div>
@@ -9,13 +29,13 @@
             <form class="form-horizontal" method="post" enctype="multipart/form-data">
             <?php //echo form_open(); ?>
                 <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email" value="<?= set_value('email_id');?>">
-<!--                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>-->
+                    <input type="email" name="email_id" class="form-control" placeholder="Email" value="<?= set_value('email_id');?>">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     <div class="error"><?php echo form_error('email_id'); ?></div>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password" value="<?= set_value('password');?>">
-<!--                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>-->
+                    <input type="password" name="password" class="form-control" placeholder="Password" value="<?= set_value('password');?>">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     <div class="error"><?php echo form_error('password'); ?></div>
                 </div>
                 <div class="row">

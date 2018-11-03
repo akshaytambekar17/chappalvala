@@ -67,6 +67,10 @@ $route['category/add'] = 'backend/CategoryController/add';
 $route['category/update'] = 'backend/CategoryController/update';
 $route['category/delete'] = 'backend/CategoryController/delete';
 
+$route['user/home'] = 'backend/UserController/home';
+$route['logout'] = 'backend/UserController/logout';
+
+
 
 
 /*******************Frontend**************************/
