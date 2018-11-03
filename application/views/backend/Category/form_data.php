@@ -77,7 +77,7 @@
                                 <label>Image</label>
                                 <input type="file" name="image" id="image"> <br>
                                 <?php if(!empty($category_details['image'])){ ?>
-                                    <img src="<?= base_url()?>assets/category-images/<?= $category_details['image']?>" width="70px" height="50px">
+                                    <img src="<?= base_url()?>assets/images/category-images/<?= $category_details['image']?>" width="70px" height="50px">
                                     <input type="hidden" value="<?= $category_details['image']?>" name="image_hidden">
                                 <?php } ?>
                                 <span class="help-block"><?php echo form_error('image'); ?></span>

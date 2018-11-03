@@ -29,12 +29,8 @@ class MY_Controller extends CI_Controller {
         
         if(!empty($data['header'])){
             includesHeader($data);
-        }else if(!empty($data['headerSidebar'])){
-            includesHeaderSidebar($data);
-        }else if(!empty($data['headerFooter'])){
-            includesHeaderFooter($data);
         }else{
-            includesAll($data);
+            includesHeaderFooter($data);
         }
         
     }

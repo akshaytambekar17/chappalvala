@@ -36,7 +36,7 @@ class CategoryController extends MY_Controller {
 
             if($this->form_validation->run('category') == TRUE){
                 if(!empty($_FILES['image']['name'])){
-                    $config['upload_path']          = './assets/category-images/';
+                    $config['upload_path']          = './assets/images/category-images/';
                     $config['allowed_types']        = 'gif|jpg|png|jpeg';
                     $config['max_size']             = 2048;
                     $config['max_width']            = 0;
@@ -102,7 +102,7 @@ class CategoryController extends MY_Controller {
             if($this->form_validation->run('category') == TRUE){
                 $details = $post;
                 if(!empty($_FILES['image']['name'])){
-                    $config['upload_path']          = './assets/category-images/';
+                    $config['upload_path']          = './assets/images/category-images/';
                     $config['allowed_types']        = 'gif|jpg|png|jpeg';
                     $config['max_size']             = 2048;
                     $config['max_width']            = 0;

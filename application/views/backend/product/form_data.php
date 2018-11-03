@@ -95,7 +95,7 @@
                                 <label>Image</label>
                                 <input type="file" name="image" id="image"> <br>
                                 <?php if(!empty($product_details['image'])){ ?>
-                                    <img src="<?= base_url()?>assets/product-images/<?= $product_details['image']?>" width="70px" height="50px">
+                                    <img src="<?= base_url()?>assets/images/product-images/<?= $product_details['image']?>" width="70px" height="50px">
                                     <input type="hidden" value="<?= $product_details['image']?>" name="image_hidden">
                                 <?php } ?>
                                 <span class="help-block"><?php echo form_error('image'); ?></span>

@@ -33,7 +33,7 @@ class ProductController extends MY_Controller {
             }
             if($this->form_validation->run('products-form') == TRUE){
                 
-                $config['upload_path']          = './assets/product-images/';
+                $config['upload_path']          = './assets/images/product-images/';
                 $config['allowed_types']        = 'gif|jpg|png|jpeg';
                 $config['max_size']             = 2048;
                 $config['max_width']            = 0;
@@ -137,7 +137,7 @@ class ProductController extends MY_Controller {
             if($this->form_validation->run('products-form') == TRUE){
                 $details = $post;
                 if(!empty($_FILES['image']['name'])){
-                    $config['upload_path']          = './assets/product-images/';
+                    $config['upload_path']          = './assets/images/product-images/';
                     $config['allowed_types']        = 'gif|jpg|png|jpeg';
                     $config['max_size']             = 2048;
                     $config['max_width']            = 0;
