@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/var/www/testshoes/application/config/routes.php</file>
-            <file>file:/var/www/testshoes/application/config/form_validation.php</file>
-            <file>file:/var/www/testshoes/application/models/ProductModel.php</file>
-            <file>file:/var/www/testshoes/application/views/backend/product/form_data.php</file>
-            <file>file:/var/www/testshoes/application/views/backend/product/list.php</file>
-            <file>file:/var/www/testshoes/application/controllers/backend/ProductController.php</file>
-            <file>file:/var/www/testshoes/application/models/ProductHasCategoryModel.php</file>
-            <file>file:/var/www/testshoes/database/update.sql</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

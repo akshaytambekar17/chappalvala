@@ -1,104 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<html class="no-js" lang="">
+<head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title><?= !empty($title)?$title:'Chappalvala' ?></title>
         <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title><?= $title?></title>
 
-        <!-- Animate.css -->
-        <link href="<?= base_url()?>assets/frontend/css/animate.css" rel="stylesheet"/>
+        <!-- favicon
+        ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<!-- Google Fonts
+        ============================================ -->
+        <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-        <!-- Bootstrap -->
-        <link href="<?= base_url()?>assets/frontend/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- All css -->
 
-        <!-- Custom Fonts -->
-        <link href="<?= base_url()?>assets/frontend/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-        <!-- owl.carousel Stylesheet -->
-        <link href="<?= base_url()?>assets/frontend/css/owl.carousel.css" rel="stylesheet" />
-        <link href="<?= base_url()?>assets/frontend/css/style_crowj.css" rel="stylesheet" />
-
-
-        <!-- Custom Stylesheet -->
-        <link href="<?= base_url()?>assets/frontend/css/stylesheet.css" rel="stylesheet" />
-
-        <link rel="icon" href="<?= base_url()?>assets/images/fav.png" type="image/png" sizes="48x48">
-
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/bootstrap.min.css">
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/font-awesome.min.css">
+        <!-- owl.carousel CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/owl.theme.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/owl.transitions.css">
+        <!-- jquery-ui CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/jquery-ui.css">
+        <!-- meanmenu CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/meanmenu.min.css">
+        <!-- nivoslider CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/lib/css/nivo-slider.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/lib/css/preview.css">
+        <!-- animate CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/animate.css">
+        <!-- magic CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/magic.css">
+        <!-- normalize CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/normalize.css">
+        <!-- main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/main.css">
+        <!-- style CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/style.css">
+        <!-- responsive CSS
+        ============================================ -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/responsive.css">
+        <!-- modernizr JS
+        ============================================ -->
+        <script src="<?= base_url() ?>assets/frontend/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>    
-        <header class="header">
-            <div class="headerwrap">
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!-- header area start -->
+        <header>
+            <div class="top-link">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 logo">
-                            <div class="mainlogo">
-                                <a href="<?= base_url()?>"><img src="<?= base_url()?>assets/images/logo.png" alt=" " class="img-responsive"></a>
-                            </div><!-- mainlogo -->            
-                        </div><!-- logo --> 
-                        <div class="col-md-9 mainnav">
-                            <nav class="navbar navbar-default headnav">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div><!-- navbar-header -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">    
-                                    <ul class="nav navbar-nav navbar-right">              
-                                        <li class="active"><a href="<?= base_url()?>">Home</a></li>
-                                        <li><a href="<?= base_url()?>about-us">About</a></li>             
-                                        <li class="dropdown">
-                                            <a href="#." class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">product</a>
-                                            <ul class="dropdown-menu dropdownmenu">
-                                                <li><a href="<?= base_url()?>product/product-list">Mens</a></li>
-                                                <li><a href="<?= base_url()?>product/product-list">Womens</a></li>
-                                                <li><a href="<?= base_url()?>product/product-list">kids</a></li>
-                                            </ul>
-                                        </li>           
-<!--                                        <li><a href="<?= base_url()?>product/product-list">Shop</a></li>-->
-                                        <li><a href="<?= base_url()?>blog">blog</a></li>
-                                        <li><a href="<?= base_url()?>invest-with-us">Invest with us</a></li>
-                                        <li><a href="<?= base_url()?>contact-us">contact</a></li>                   
-                                    </ul>
-                                </div><!-- .navbar-collapse --> 
-                            </nav> 
-                            <div class="mobilemodenav">
-                                <span class="mob"  onclick="openNav()"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </span>
-                                <div id="mySidenav" class="sidenav" >
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <span class="sr-only"></span><span class="icon-bar-close left"></span> <span class="icon-bar-close rt"></span>  </a>
-                                    <a href="#."><img src="images/logo.png" alt="" class="img-responsive"></a>    
-                                    <ul id="main-menu" class="mob-nav">
+                        <div class="col-md-9 col-md-offset-3 col-sm-9 hidden-xs">
+                            <div class="call-support">
+                                <p>Call For Franchise: <span> (800) 123 456 789</span> Email : <span> info@chappalvala.com</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainmenu-area product-items">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="logo">
+                                <a href="index.php">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul>
                                         <li><a href="<?= base_url()?>">Home</a></li>
-                                        <li><a href="<?= base_url()?>about-us">About</a></li>             
-                                        <li class="dropdown">
-                                            <a href="#." class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">product</a>
-                                            <ul class="dropdown-menu dropdownmenu">
-                                                <li><a href="<?= base_url()?>product/product-list">Mens</a></li>
-                                                <li><a href="<?= base_url()?>product/product-list">Womens</a></li>
-                                                <li><a href="<?= base_url()?>product/product-list">kids</a></li>
-                                            </ul>
-                                        </li>              
-                                        <!--                                        <li><a href="<?= base_url()?>product/product-list">Shop</a></li>-->
+                                        <li><a href="<?= base_url()?>about-us">About Us</a></li>
+                                        <li class="mega-jewellery"><a href="#">Category</a>
+                                            <div class="mega-menu jewellery">
+                                                <span>
+                                                    <a href="men.php">Men</a>
+                                                </span>
+                                                 <span>
+                                                    <a href="women.php">Women</a>
+                                                </span>
+                                                 <span>
+                                                    <a href="kids.php">Kids</a>
+                                                </span>
+                                            </div>
+                                        </li>
                                         <li><a href="<?= base_url()?>blog">Blog</a></li>
-                                        <li><a href="<?= base_url()?>invest-with-us">Invest with us</a></li>
-                                        <li><a href="<?= base_url()?>contact-us">contact</a></li>                   
-
+                                        <li><a href="<?= base_url()?>invest-with-us">Invest With Us</a></li>
+                                        <li><a href="<?= base_url()?>contact-us">Contact Us</a></li>
                                     </ul>
-                                </div><!-- sidenav -->
-                            </div><!-- mobilemodenav -->
-                        </div><!-- mainnav --> 
-
-                    </div><!-- row -->
-                </div><!-- container -->
-            </div><!-- headerwrap -->    
-        </header> 
-
-
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="mobile-menu">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about-us.php">About Us</a></li>
+                                        <li class="mega-jewellery"><a href="#">Category</a>
+                                            <div class="mega-menu jewellery">
+                                                <span>
+                                                    <a href="men.php">Men</a>
+                                                </span>
+                                                 <span>
+                                                    <a href="women.php">Women</a>
+                                                </span>
+                                                 <span>
+                                                    <a href="kids.php">Kids</a>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li><a href="blog.php">Blog</a></li>
+                                        <li><a href="invest_with_us.php">Invest With Us</a></li>
+                                        <li><a href="contact-us.php">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header area end -->

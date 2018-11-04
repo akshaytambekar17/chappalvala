@@ -32,17 +32,17 @@ class HomeController extends MY_Controller {
     }
     public function aboutUs() {
         $data['title'] = 'About Us';
-        $data['view'] = 'about';
+        $data['view'] = 'about-us';
         $this->frontendLayout($data);
     }
     public function contactUs() {
         $data['title'] = 'Contact Us';
-        $data['view'] = 'contact';
+        $data['view'] = 'contact-us';
         $this->frontendLayout($data);
     }
     public function investWithUs() {
         $data['title'] = 'Invest With Us';
-        $data['view'] = 'investwithus';
+        $data['view'] = 'invest-with-us';
         $this->frontendLayout($data);
     }
     public function blog() {

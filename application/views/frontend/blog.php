@@ -1,72 +1,70 @@
-<!DOCTYPE html>
-
-<section class="banner innerbanner">
-    <div class="innerbanerwrap">
-    </div><!-- innerbanerwrap -->
-</section> 
-<section class="breadcumbs">
-    <div class="container">
-        <ol class="breadcrumb">
-            <li><a href="#.">Home</a></li>
-            <li class="active">Blog</li>
-        </ol>
-    </div><!-- container -->
-</section><!-- breadcumbs -->
-<section class="Blog">
-    <div class="container">
-        <div class="row">     
-            <div class="col-md-12 leftblog">
-                <div class="blogimg">      
-                    <img src="<?= base_url() ?>assets/images/blog1.png" alt="" class="img-responsive">
-                </div><!-- blogimg -->
-                <div class="blogcontent">
-                    <h4 class="mediumdarktext wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </h4> 
-                    <ul class="list-inline bloglikes">
-                        <li><a href="#.">Lorem ipsum dolor</a></li>
-                        <li><a href="#.">14 May 2018</a></li>
-                        <li class="eye"><a href="#."><span><i class="fa fa-eye" aria-hidden="true"></i></span>20470</a>
-                        </li>
-                        <li class="msg"><a href="#."><span><i class="fa fa-envelope" aria-hidden="true"></i></span>170
-                            </a></li>
-                        <li class="like"><a href="#."><span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                </span>12098</a></li>
-                        <li class="dislike"><a href="#."><span><i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                </span>1188</a></li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>           
-                    <div class="full-left">
-                        <img src="<?= base_url() ?>assets/images/blog2.png" alt="" class="img-responsive">
-                    </div><!-- full-left -->
-                    <div class="full-right">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <p>Sed uomnis iste natus error sit voluptatem accusantium doloremque laudantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div><!-- full-right -->
-                    <ul class="list-inline socialicons">
-                        <li class="facebook"><a href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="twitter"><a href="#."><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="other"><a href="#."><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                        <li class="leavecomment"><a href="#.">Leave a Comment</a></li>
-                    </ul> 
-                </div><!-- blogcontent -->
-            </div><!-- leftblog -->
-
-        </div><!-- row -->
-    </div><!-- container -->
-</section><!-- Blog -->
+<!doctype html>
+        <!-- blog details area start -->
+        <div class="blog-details-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="location">
+                            <ul>
+                                <li><a href="<?= base_url()?>" title="go to homepage">Home<span>/</span></a></li>
+                                <li><strong> blog </strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sidebar-title">
+                            <h2>Details Post</h2>
+                       </div>
+                        <div class="blog-area">
+                            <div class="blog-post-details">
+                                <div class="blog-img">
+                                    <a href="#">
+                                        <img src="<?= base_url()?>assets/frontend/img/blog/6.jpg" alt="" height="250px;" width="auto">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="blog-title">20 Stylish Running Sneakers You Never Knew Existed</a>
+                                    <span><a href="#">By Chappalvala - </a>5 Nov 2018 </span>
+                                    <p>With sneakers so prevalent in every cool girl’s wardrobe over the past few seasons, we’ve tried out nearly every shape, color, and style of the sporty footwear that exists. We’ve gone high-top and low-top, velvet, satin, and trusty leather. We have an embellished pair to dress up more understated looks and a decidedly less loud style to pair with that printed dress for summer barbecues and more. When it comes to actual running sneakers, though, choosing the right style can be tough. A pair that mixes style and function is not always easy to come by.</p>
+                                    <p>When seeking those stylish running sneakers, it’s a non-negotiable that they actually be a style you can run in. Gone are the sporty kicks that merely look like you could take them on a jog, only to discover they’ve given you blisters and shin splints—at mile one. But with a nod to function, it’s time to up the sartorial bar, forgoing the boring white and black sneakers your parents have been jogging in for years.</p>
+                                    <p>Lucky for all us fashion girls, athletic brands have begun to release a large selection of shoes that are not only among the best running sneakers out there but also super stylish. Wear them with leggings and a sports bra for a summertime run in the park and then afterward to Sunday brunch with friends, swapping that sportswear for a pair of jeans. Hey, you could even wear most of the below styles with a cute sundress if you’re feeling ambitious. Your toes will certainly thank you! At every price point, shop the below 20 styles below, just in time for summer. These chic running sneakers are the athletic addition your already incredible shoe closet.</p>
+                                    
+                                    <div class="about-author">
+                                        <div class="author-content">
+                                            <h3>About the Author: <a href="#">www.whowhatwear.com</a> </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-<!--<section class="newsletters">
-   <div class="blackoverlay"></div>
-   <div class="newswrap">
-      <h3 class="largwhitetext wow fadeInDown">Newsletter</h3>
-        <hr class="dash">
-        <p>Subscribe to the <span>Chappalwala</span> mailing list to receive updates on new arrivals,<br>special offers and other discount information.</p>
-       <div class="input-box">
-        <input type="text" class="form-control" placeholder="Enter Your Email">
-        <a class="btn btn-default commanbtn subscribe-btn " href="#." role="button">subscribe</a>
-      </div>
-    </div>
- </section>  -->
+                                    <div class="blog-area">
+                            <div class="blog-post-details">
+                                <div class="blog-img">
+                                    <a href="#">
+                                        <img src="<?= base_url()?>assets/frontend/img/blog/blog_2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="blog-title">The Advantages of Wearing Slippers</a>
+                                    <span><a href="#">By Aqualite - </a>23 May 2018 </span>
+                                    <h5>Why Wearing Slipper is so Necessary?</h5>
+                                    <p>Slippers are light weighted footwear and are quite easier to wear. People mostly wear it at indoors, especially at home. The history of slippers has been found to be related 12th century when Vietnamese were wearing slippers. In the western region, the history of slippers can only be traced to 1478.</p>
 
+                                    <p>There are several types of slippers like open-heel slippers, closed slippers, slipper boots, sandal slippers and evening slippers. The slippers are basically made up of soft and colourful material. It also comes in the attractive shapes of animals, animal paws, vehicles, cartoon characters etc.<p>
+                                    
+                                    <div class="about-author">
+                                        <div class="author-content">
+                                            <h3>About the Author: <a href="#">www.aqualiteindia.com</a> </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
