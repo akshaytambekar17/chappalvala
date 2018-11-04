@@ -20,7 +20,15 @@ class ProductController extends MY_Controller {
     {
         $data['title'] = 'Product List';
         $data['heading'] = 'Products List';
-        $data['view'] = 'productlisting';
+        $data['view'] = 'men';
+        $data['product_list'] = $this->Product->getProducts();
+        $this->frontendLayout($data);
+    }
+    public function productDetails()
+    {
+        $data['title'] = 'Product Details';
+        $data['heading'] = 'Products Details';
+        $data['view'] = 'single-product';
         $data['product_list'] = $this->Product->getProducts();
         $this->frontendLayout($data);
     }

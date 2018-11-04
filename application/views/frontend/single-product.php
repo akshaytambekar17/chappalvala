@@ -1,16 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> Product || Chappalvala.com </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- favicon
-        ============================================ -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <?php include("common/header.php");?>
         <!-- single product area start -->
         <div class="Single-product-location home2">
             <div class="container">
@@ -18,7 +6,7 @@
                     <div class="col-md-12">
                         <div class="location">
                             <ul>
-                                <li><a href="index.html" title="go to homepage">Home<span>/</span></a>  </li>
+                                <li><a href="<?= base_url()?>" title="go to homepage">Home<span>/</span></a>  </li>
                                 <li><strong>Product Name</strong></li>
                             </ul>
                         </div>
@@ -34,45 +22,45 @@
                     <div class="col-sm-6">
                         <div class="single-product-img tab-content">
                             <div class="single-pro-main-image tab-pane active" id="pro-large-img-1">
-                                <a href="#"><img class="optima_zoom" src="img/product/7.png" data-zoom-image="img/product/7.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" src="<?= base_url() ?>assets/frontend/img/product/7.png" data-zoom-image="<?= base_url() ?>assets/frontend/img/product/7.png" alt="optima"/></a>
                             </div>
                             <div class="single-pro-main-image tab-pane" id="pro-large-img-2">
-                                <a href="#"><img class="optima_zoom" src="img/product/2.png" data-zoom-image="img/product/2.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" src="<?= base_url() ?>assets/frontend/img/product/2.png" data-zoom-image="<?= base_url() ?>assets/frontend/img/product/2.png" alt="optima"/></a>
                             </div>
                             <div class="single-pro-main-image tab-pane" id="pro-large-img-3">
-                                <a href="#"><img class="optima_zoom" src="img/product/8.png" data-zoom-image="img/product/8.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" src="<?= base_url() ?>assets/frontend/img/product/8.png" data-zoom-image="<?= base_url() ?>assets/frontend/img/product/8.png" alt="optima"/></a>
                             </div>
                             <div class="single-pro-main-image tab-pane" id="pro-large-img-4">
-                                <a href="#"><img class="optima_zoom" src="img/product/1.png" data-zoom-image="img/product/1.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" src="<?= base_url() ?>assets/frontend/img/product/1.png" data-zoom-image="<?= base_url() ?>assets/frontend/img/product/1.png" alt="optima"/></a>
                             </div>
                             <div class="single-pro-main-image tab-pane" id="pro-large-img-5">
-                                <a href="#"><img class="optima_zoom" src="img/product/9.png" data-zoom-image="img/product/9.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" src="<?= base_url() ?>assets/frontend/img/product/9.png" data-zoom-image="<?= base_url() ?>assets/frontend/img/product/9.png" alt="optima"/></a>
                             </div>
                         </div>
                         <div class="product-page-slider">
                             <div class="single-product-slider">
                                 <a href="#pro-large-img-1" data-toggle="tab">
-                                    <img src="img/product/28.png" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/28.png" alt="">
                                 </a>
                             </div>
                             <div class="single-product-slider">
                                 <a href="#pro-large-img-2" data-toggle="tab">
-                                    <img src="img/product/30.png" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/30.png" alt="">
                                 </a>
                             </div>
                             <div class="single-product-slider">
                                 <a href="#pro-large-img-3" data-toggle="tab">
-                                    <img src="img/product/29.png" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/29.png" alt="">
                                 </a>
                             </div>
                             <div class="single-product-slider">
                                 <a href="#pro-large-img-4" data-toggle="tab">
-                                    <img src="img/product/31.png" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/31.png" alt="">
                                 </a>
                             </div>
                             <div class="single-product-slider">
                                 <a href="#pro-large-img-5" data-toggle="tab">
-                                    <img src="img/product/29.png" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/29.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -140,4 +128,3 @@
             </div>
         </div>
         <!-- single product details end -->
-<?php include("common/footer.php");?>

@@ -98,13 +98,13 @@
                                         <li class="mega-jewellery"><a href="#">Category</a>
                                             <div class="mega-menu jewellery">
                                                 <span>
-                                                    <a href="men.php">Men</a>
+                                                    <a href="<?= base_url()?>product/product-list">Men</a>
+                                                </span>
+                                                <span>
+                                                    <a href="<?= base_url()?>product/product-list">Women</a>
                                                 </span>
                                                  <span>
-                                                    <a href="women.php">Women</a>
-                                                </span>
-                                                 <span>
-                                                    <a href="kids.php">Kids</a>
+                                                    <a href="<?= base_url()?>product/product-list">Kids</a>
                                                 </span>
                                             </div>
                                         </li>
@@ -124,13 +124,13 @@
                                         <li class="mega-jewellery"><a href="#">Category</a>
                                             <div class="mega-menu jewellery">
                                                 <span>
-                                                    <a href="men.php">Men</a>
+                                                    <a href="<?= base_url()?>product-list">Men</a>
                                                 </span>
                                                  <span>
-                                                    <a href="women.php">Women</a>
+                                                    <a href="<?= base_url()?>product-list">Women</a>
                                                 </span>
                                                  <span>
-                                                    <a href="kids.php">Kids</a>
+                                                    <a href="<?= base_url()?>product-list">Kids</a>
                                                 </span>
                                             </div>
                                         </li>

@@ -1,19 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="">
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> Men || Chappalvala.com </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- favicon
-        ============================================ -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <?php include("common/header.php");?>
         <!-- product items banner start -->
         <div class="product-banner">
-            <img src="img/product/banner.jpg" alt="">
+            <img src="<?= base_url() ?>assets/frontend/img/product/banner.jpg" alt="">
         </div>
         <!-- product items banner end -->
         <!-- product main items area start -->
@@ -23,7 +11,7 @@
                     <div class="col-md-12">
                         <div class="location">
                             <ul>
-                                <li><a href="index.php" title="go to homepage">Home<span>/</span></a>  </li>
+                                <li><a href="<?= base_url()?>" title="go to homepage">Home<span>/</span></a>  </li>
                                 <li><strong>Men</strong></li>
                             </ul>
                         </div>
@@ -111,7 +99,7 @@
                                     <option value="#">Price</option>
                                 </select>
                                 <a href="#" title="Set Descending Direction">
-                                    <img src="img/product/i_asc_arrow.gif" alt="">
+                                    <img src="<?= base_url() ?>assets/frontend/img/product/i_asc_arrow.gif" alt="">
                                 </a>
                             </div>
                             <div class="limit-product">
@@ -132,13 +120,13 @@
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="single-product">
                                                 <div class="product-img">
-                                                    <a href="single-product.php">
-                                                        <img src="img/product/25.png" alt="" class="primary-img">
+                                                    <a href="<?= base_url()?>product/product-details">
+                                                        <img src="<?= base_url() ?>assets/frontend/img/product/25.png" alt="" class="primary-img">
                                                     </a>
                                                 </div>
                                                 <div class="product-price">
                                                     <div class="product-name">
-                                                        <a href="single-product.php" title="Product Title">Fusce aliquam</a>
+                                                        <a href="<?= base_url()?>product/product-details" title="Product Title">Fusce aliquam</a>
                                                     </div>
                                                     <div class="price-rating">
                                                         <span>₹170.00</span>
@@ -156,7 +144,7 @@
                                         <li class="current"><a href="#">1</a></li>
                                         <li><a href="#">2</a></li>
                                         <li><a href="#">3</a></li>
-                                        <li><a href="#"> <img src="img/product/pager_arrow_right.gif" alt=""> </a></li>
+                                        <li><a href="#"> <img src="<?= base_url() ?>assets/frontend/img/product/pager_arrow_right.gif" alt=""> </a></li>
                                     </ul>
                                 </div> -->
                             </div>
@@ -166,4 +154,3 @@
             </div>
         </div>
         <!-- product main items area end -->
-<?php include("common/footer.php");?>
